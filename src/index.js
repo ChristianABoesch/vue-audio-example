@@ -4,9 +4,7 @@ var app = new Vue({
     message: "Christian"
   },
   methods: {
-    playSound() {
-      let url =
-        "http://soundbible.com/mp3/Elevator%20Ding-SoundBible.com-685385892.mp3";
+    playSound(url) {
       let sound = new Audio(url);
       sound.play();
     }
